@@ -98,7 +98,7 @@ names(x) <- c("A1","B2","C3")
 
 # Naming lists
 
-x <- list("Hacettepe" = 1, "ODTU" = 2, "Ankara" = 3)
+x <- list("Ankara" = 1, "Adana" = 2, "Izmir" = 3)
 x
 
 # Naming Matrices
