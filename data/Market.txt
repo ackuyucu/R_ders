@@ -1,0 +1,6 @@
+Urun;Fiyat
+Muz;6
+Ekmek;2
+Ekmek;3
+Elma;4
+
