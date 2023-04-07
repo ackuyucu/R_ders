@@ -15,7 +15,43 @@ print(x)
 x <- 11:35
 x
 
+# Nesne tipi
+
+# Numerik
+
+x <- c(0.76, 1, 3.4, 7.8)
+
+class(x)
+
+#Karakter
+
+msg <- "Merhaba!"
+
+class(msg)
+
+#logical (boolean)
+
+class(TRUE)
+
+class(FALSE)
+
+bool_1 <- c(F,T,F,F,T,T,T)
+
+class(bool_1)
+
+sum(bool_1)
+
+mean(bool_1)
+
+3 > 4
+
+class(3 <= 4)
+
+0.5 == 1/2
+
+
 # Vektorler
+
 x <- c("Hi",0.5,0.6) #numeric
 x <- c(TRUE,FALSE) #logical
 x <- c(T,F) #logical
@@ -37,22 +73,42 @@ y <- c("a",TRUE) ##character
 
 x <- 0:6
 class(x)
+
 as.numeric(x)
 as.logical(x)
 as.character(x)
 
+x + 3
+
+
+# x in tipini degistir
+
+x <- as.character(x)
+
+x
+
+x + 3
+
 x <- c("a","b","c")
+
 as.numeric(x)
 as.logical(x)
 as.complex(x)
 
+
+
+
 # Erisim
+
+x <- c("a","b","c")
+
 
 x[1]
 
 x[2:3]
 
 x[4]
+
 
 # Matrisler
 
@@ -108,10 +164,6 @@ is.na(x)
 
 is.nan(x)
 
-# Veri verceveleri (data frame)
-data1 <- data.frame(foo = 1:4,bar = c(TRUE,TRUE,FALSE,FALSE))
-
-data1
 
 # Isimler
 
@@ -136,11 +188,6 @@ m
 print(m)
 
 
-market_data <- read.table(file = "data/Market.txt",sep = ";",header = TRUE)
-  
-market_data
-
-
 
 
 # Subsetting
@@ -149,6 +196,18 @@ x <- list(a = list(10, 12, 14), b = c(3.14, 2.81))
 x
 x[1]
 x[[c(1,3)]]
+
+
+# Veri verceveleri (data frame)
+data1 <- data.frame(foo = 1:4,bar = c(TRUE,TRUE,FALSE,FALSE))
+
+data1
+
+
+
+market_data <- read.table(file = "data/Market.txt",sep = ";",header = TRUE)
+
+market_data
 
 
 # Omitting NA
