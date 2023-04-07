@@ -23,6 +23,12 @@ x <- c(0.76, 1, 3.4, 7.8)
 
 class(x)
 
+x <- 10:16
+y <- 20:26
+x + y
+x/y
+x*y
+
 #Karakter
 
 msg <- "Merhaba!"
@@ -225,12 +231,20 @@ airquality
 bad <- is.na(airquality)
 air_new <- airquality[!bad]
 
-x <- 10:16
-y <- 20:26
-x + y
-x/y
-x*y
+# Dataframe access
 
+summary(airquality)
+
+airquality$Ozone
+
+head(airquality$Wind)
+
+tail(airquality$Wind)
+
+
+# Paket yukleme
+
+install.packages("tidyverse", dependencies = T)
 
 library(tidyverse)
 
